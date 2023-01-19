@@ -1,11 +1,7 @@
 ## PixelPage
 Simple and minimalistic start page with some unique features.
 
-----
-
 ![Preview](PixelPage.PNG)
-
-----
 
 ## Usage
 1. Clone the repository and unpack it
