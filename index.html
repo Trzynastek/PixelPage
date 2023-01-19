@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="settings.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>PixelPage</title>
+</head>
+<body>
+    <div class="container">
+        <div id="clock">
+            <p id="time"></p>
+            <p id="date"></p>
+            <p id="greeting"></p>
+        </div>
+        <div class="content">
+            <div id="grid"></div>
+            <div id="listbox"></div>
+            <div id="notes">
+                <i icon-name="clipboard-type" class="icon"></i>
+                <textarea id="note" oninput="save()"></textarea>
+            </div>
+        </div>
+    </div>
+    <i icon-name="settings" class="gear"></i>
+    <div id="settings">
+        <p class="header">Styling</p>
+        <div class="line"><p class="text">Background</p><input type="text" id="background" placeholder="#202020" oninput="savesettings('background', 'input')"></input></div>
+        <div class="line"><p class="text">Foreground</p><input type="text" id="foreground" placeholder="#d8dee9" oninput="savesettings('foreground', 'input')"></input></div>
+        <div class="line"><p class="text">Primary</p><input type="text" id="primary" placeholder="#1a1a1a" oninput="savesettings('primary', 'input')"></input></div>
+        <div class="line"><p class="text">Secondary</p><input type="text" id="secondary" placeholder="#5800e6" oninput="savesettings('secondary', 'input')"></input></div>
+        <div class="line"><p class="text">Roundness</p><input type="text" id="roundness" placeholder="5px" oninput="savesettings('roundness', 'input')"></input></div>
+        <p class="header">Layout</p>
+        <div class="line"><p class="text">Columns</p><input type="text" id="columns" placeholder="3" oninput="savesettings('columns', 'input')"></input></div>
+        <div class="line"><p class="text">Rows</p><input type="text" id="rows" placeholder="2" oninput="savesettings('rows', 'input')"></input></div>
+        <div class="line"><p class="text">Lists</p><input type="text" id="lists" placeholder="1" oninput="savesettings('lists', 'input')"></input></div>
+        <div class="line"><p class="text">Notes</p><div class="line"><div class="option" onclick="savesettings('notes', 'true')" id="noteson">ON</div><div class="option" onclick="savesettings('notes', 'false')" id="notesoff">OFF</div></div></div>
+        <p class="header">Clock</p>
+        <div class="line"><p class="text">Time</p><div class="line"><div class="option" onclick="savesettings('time', 'true')" id="timeon">ON</div><div class="option" onclick="savesettings('time', 'false')" id="timeoff">OFF</div></div></div>
+        <div class="line"><p class="text">Date</p><div class="line"><div class="option" onclick="savesettings('date', 'true')" id="dateon">ON</div><div class="option" onclick="savesettings('date', 'false')" id="dateoff">OFF</div></div></div>
+        <div class="line"><p class="text">Greeting</p><div class="line"><div class="option" onclick="savesettings('greeting', 'true')" id="greetingon">ON</div><div class="option" onclick="savesettings('greeting', 'false')" id="greetingoff">OFF</div></div></div>
+        <p class="header">Other</p>
+        <div class="line"><p class="text">Name</p><input type="text" id="name" placeholder="User" oninput="savesettings('name', 'input')"></input></div>
+        <div class="line"><p class="text">Open in new page</p><div class="line"><div class="option" onclick="savesettings('openinnewpage', 'true')" id="openinnewpageon">ON</div><div class="option" onclick="savesettings('openinnewpage', 'false')" id="openinnewpageoff">OFF</div></div></div>
+        <div class="line"><p class="text">Github notification count</p><div class="line"><div class="option" onclick="savesettings('notifications', 'true')" id="notificationson">ON</div><div class="option" onclick="savesettings('notifications', 'false')" id="notificationsoff">OFF</div></div></div>
+        <div class="line"><p class="text">Github token</p><input type="text" id="token" placeholder="" oninput="savesettings('token', 'input')"></input></div>
+        <p id="info">Most of the settings will<br/>apply only after refresh.</p>
+    </div>
+    <script src="script.js"></script>
+    <script>lucide.createIcons()</script>
+</body>
+</html>
