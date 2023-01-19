@@ -1,8 +1,13 @@
-### PixelPage
+## PixelPage
 Simple and minimalistic start page with some unique features.
+
+---
+
 ![Preview](PixelPage.PNG)
 
-### Usage
+---
+
+## Usage
 1. Clone the repository and unpack it
 2. Download the [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia) chrome extension.
 3. change the link option in the extension to the index.html file.
