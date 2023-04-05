@@ -1,3 +1,5 @@
+![Preview](PixelPage.PNG)
+
 ### Usage
 1. Clone the repository and unpack it
 2. Download the [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia) chrome extension.
