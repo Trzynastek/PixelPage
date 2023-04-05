@@ -18,31 +18,35 @@ const settings = {
 	other: {
 		name: 'User',
 		openinnewpage: false, // true or false
-		notifications: false, // true or false - enable notifications for github entry in list
-		token: '', // github token for notification count
 	},
     ButtonsContainer: [
 		{
+			name: 'Youtube',
 			icon: 'youtube', // icons can be found here: https://lucide.dev/
 			link: 'https://youtube.com/',
 		},
 		{
+			name: 'Twitch',
 			icon: 'twitch', // icons can be found here: https://lucide.dev/
 			link: 'https://twitch.tv/',
 		},
 		{
+			name: 'Animesuge',
 			icon: 'play', // icons can be found here: https://lucide.dev/
 			link: 'https://animesuge.to/home',
 		},
 		{
+			name: 'Gmail',
 			icon: 'mail', // icons can be found here: https://lucide.dev/
 			link: 'https://mail.google.com',
 		},
 		{
+			name: 'Google Drive',
 			icon: 'server', // icons can be found here: https://lucide.dev/
 			link: 'https://drive.google.com',
 		},
 		{
+			name: 'Messenger',
 			icon: 'message-circle', // icons can be found here: https://lucide.dev/
 			link: 'https://messenger.com/',
 		},
@@ -67,7 +71,10 @@ const settings = {
 				name: 'Reddit', // icons can be found here: https://lucide.dev/
 				link: 'https://reddit.com',
 			},
-			
+			{
+				name: 'Librus', // icons can be found here: https://lucide.dev/
+				link: 'https://portal.librus.pl/rodzina/synergia/loguj',
+			},
 		],
 	},
 	notes: "notes"
