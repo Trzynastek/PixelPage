@@ -17,7 +17,6 @@ const settings = {
 	},
 	other: {
 		name: 'User',
-		openinnewpage: false, // true or false
 	},
     ButtonsContainer: [
 		{
