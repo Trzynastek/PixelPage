@@ -75,7 +75,3 @@ async function clock() {
     }
     setTimeout(clock, 1000);
 }
-
-function navigate(link) {
-    window.open(link, target);
-}
