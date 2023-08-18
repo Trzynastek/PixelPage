@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh !important;
+    height: 97vh !important;
 }
 .content {
     display: flex;
@@ -28,6 +28,10 @@ body {
     box-shadow: 0 5px 7px rgb(0 0 0 / 35%);
     transition-duration: 300ms;
     position: relative;
+}
+.button > svg {
+    width: 30px;
+    height: 30px;
 }
 .button:hover {
     background-color: var(--secondary) !important;
@@ -166,6 +170,9 @@ input {
     transform: translate(-50%, -50%);
     margin: 0;
     text-align: center;
+}
+a {
+    text-decoration: none;
 }
 @media only screen and (max-width: 1100px) {
     #notes {

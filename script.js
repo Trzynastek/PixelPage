@@ -11,7 +11,7 @@ try {
             if(a * settings.layout.columns + b < settings.ButtonsContainer.length){
                 button = settings.ButtonsContainer[a * settings.layout.columns + b];
                 document.getElementById(`row-${a}`).innerHTML += 
-                `<a icon-name="${button.icon}" onclick="navigate('${button.link}')" class="button"><p class="alt">${button.name}</p></a>`
+                `<a href="${button.link}" class="button"><i icon-name="${button.icon}" ><p class="alt">${button.name}</p></i></a>`
             }else{
                 break;
             }
@@ -30,10 +30,10 @@ try {
         const list = settings.listContainer.links[c];
         if (list.name.toLowerCase() == 'github') {
             document.getElementById('list').innerHTML += 
-            `<p onclick="navigate('${list.link}')" class="link" id="github">${list.name}</p>`
+            `<a href="${list.link}" class="link" id="github">${list.name}</a>`
         } else {
             document.getElementById('list').innerHTML += 
-            `<p onclick="navigate('${list.link}')" class="link">${list.name}</p>`
+            `<a href="${list.link}" class="link">${list.name}</a>`
         }
     }
     document.documentElement.style.setProperty('--primary', settings.styling.primary);
