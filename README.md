@@ -7,11 +7,4 @@
 
 You can change all settings in the settings.js file.
 
-### Planned features
-- searchbar
-- weather
-- reminders
-
-Feel free to request any features you want to see.
-
 Tis project is inspired by [Bento by migueravila](https://github.com/migueravila/Bento#-usage)
