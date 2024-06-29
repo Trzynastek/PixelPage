@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This project will no longer be updated. If you are a Firefox user a new version is available [here](https://github.com/Trzynastek/PixelPage2.0).
+
 ![Preview](PixelPage.PNG)
 
 ### Usage
